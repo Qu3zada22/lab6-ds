@@ -1,0 +1,18 @@
+{
+  "validation": {
+    "comments": 406,
+    "classified": 406,
+    "nodes": 351,
+    "edges": 343,
+    "projection_pairs_verified": 55117
+  },
+  "model": "pysentimiento/robertuito-sentiment-analysis",
+  "revision": "a2cc0f67ebd705c55191e25a05ba23d885fcc09b",
+  "max_tokens": 128,
+  "seed": 42,
+  "community_scope": "internal author-video comments",
+  "inputs_sha256": {
+    "youtube_comments.csv": "598bde7ddbcc39f4846a59d0b33d9acfc079ca2549cb1ea44353db84be1f52f6",
+    "youtube_videos.csv": "9c7d1ed336fb6a43f7ddcb027d159deca6a808ae56b1a3ffd8730914f53e4fde"
+  }
+}

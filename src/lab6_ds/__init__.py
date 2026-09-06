@@ -1,2 +1,4 @@
 def main() -> None:
-    print("Hello from lab6-ds!")
+    from .report import main as run
+
+    run()

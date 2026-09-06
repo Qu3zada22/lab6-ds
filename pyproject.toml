@@ -1,7 +1,7 @@
 [project]
 name = "lab6-ds"
 version = "0.1.0"
-description = "Add your description here"
+description = "Reproducible YouTube participation network analysis"
 readme = "README.md"
 authors = [
     { name = "ayalaSL", email = "iris@softlogic.com" }
@@ -20,6 +20,14 @@ dependencies = [
     "seaborn>=0.13.2",
     "spacy>=3.8.16",
     "wordcloud>=1.9.6",
+    "transformers==4.57.3",
+    "pysentimiento==0.7.3",
+    "torch==2.8.0",
+    "reportlab==4.4.4",
+    "nbclient==0.11.0",
+    "nbformat==5.11.1",
+    "beautifulsoup4==4.15.0",
+    "mistune==3.3.4",
 ]
 
 [project.scripts]
@@ -31,3 +39,9 @@ build-backend = "uv_build"
 
 [tool.uv.sources]
 es-core-news-sm = { url = "https://github.com/explosion/spacy-models/releases/download/es_core_news_sm-3.8.0/es_core_news_sm-3.8.0-py3-none-any.whl" }
+torch = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
